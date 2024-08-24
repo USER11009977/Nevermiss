@@ -45,8 +45,8 @@ def generate_roblox_chart(notes, output_file_path):
         file.write("return Chart")
 
 if __name__ == "__main__":
-    osu_file_path = 'path_to_your_osu_file.osu'
-    output_file_path = 'path_to_output_chart.lua'
+    osu_file_path = 'chart.osu'
+    output_file_path = 'chart.lua'
     notes = parse_osu_file(osu_file_path)
     generate_roblox_chart(notes, output_file_path)
     print(f"Converted osu! chart to Roblox format: {output_file_path}")
